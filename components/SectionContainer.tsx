@@ -6,7 +6,7 @@ export const SectionContainer = ({
   className?: string;
 }) => {
   return (
-    <div className={`bg-slate-300 p-6 md:p-10 ${className} `}>
+    <div className={`bg-slate-300 p-6 md:p-16  ${className} `}>
       <div className="md:w-4/5 m-auto">{children}</div>
     </div>
   );

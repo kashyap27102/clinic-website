@@ -7,7 +7,7 @@ export const SectionContainer = ({
 }) => {
   return (
     <div className={`bg-slate-300 p-6 md:p-16  ${className} `}>
-      <div className="md:w-4/5 m-auto">{children}</div>
+      <div className="sm:w-5/6 m-auto">{children}</div>
     </div>
   );
 };

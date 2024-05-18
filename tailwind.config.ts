@@ -15,14 +15,18 @@ const config: Config = {
       },
     },
     colors:{
-      primary:"#6366f1",
-      primaryDark:"#4338ca",
-      primaryLight:"#818cf8",
+      primary:"#7c3aed",
+      primaryDark:"#5b21b6",
+      primaryLight:"#c4b5fd",
       secondary:"",
       light:"#f4f4f5",
       dark:"#27272a",
       white:"#ffffff",
-      yellow:"#fbbf24"
+      yellow:"#fbbf24",
+      success:"#a7f3d0",
+      successDark:"#047857",
+      danger:"#fda4af",
+      danegerDark:"#e11d48"
     }
   },
   plugins: [],

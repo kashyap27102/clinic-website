@@ -30,8 +30,8 @@ export const PatientReviewSection = () => {
           <FaStar className="text-yellow" />
         </div>
         <p className="text-gray-60 mb-4">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;
         </p>
         <p className="text-primaryDark font-semibold">- John Doe</p>
       </div>

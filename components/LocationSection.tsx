@@ -2,7 +2,7 @@ export const LocationSection = () => {
   return (
     <section>
       <div className="text-center mb-12">
-        <p className="text-primaryDark uppercase tracking-widest">
+        <p className="text-white uppercase tracking-widest">
           OUR LOCATION
         </p>
         <h2 className="text-3xl lg:text-4xl font-semibold text-white mt-2">

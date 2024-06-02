@@ -68,7 +68,7 @@ export const services = [
     description:
       "Using cups to create suction on the skin is the ancient practice of cupping therapy. It is thought to facilitate blood flow and aid in relaxation.",
     srcLink: "",
-    image: { src: s15, alt: "Cupping Therapy" },
+    image: { src: s4, alt: "Cupping Therapy" },
   },
   {
     id: "SD-000005",

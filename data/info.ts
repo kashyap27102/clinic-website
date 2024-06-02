@@ -7,7 +7,7 @@ export const info = {
         address:"203, Keshav Aaradhyam, Kudasan Gandhinagar"
     },
     social:{
-        instagram:"https://www.instagram.com/the_physio_therapeutic/",
+        instagram:"https://www.instagram.com/thephysiotherapeutic/",
         facebook:"",
         youtube:"",
     }

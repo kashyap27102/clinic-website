@@ -11,17 +11,19 @@ export const metadata: Metadata = {
     "Best Physiotherapy Clinic in Gandhinagar | The Physiotherapeutic Clinic",
   description:
     "Welcome to The Physiotherapeutic Clinic, the leading physiotherapy clinic in Gandhinagar. Our expert therapists provide personalized treatment plans to help you recover and stay healthy.",
+  keywords: [
+    "physiotherapy-clinic",
+    "best-physiotherapy-clinic-kudasan",
+    "best-physiotherapy-clinic-in-gandhinagar",
+  ],
 };
 
 export default function Home() {
   return (
     <div className="bg-light relative">
-      <SectionContainer className="bg-gradient-to-r from-primaryDark to-primaryLight sm:p-0 lg:p-0 md:p-0">
-        <HeroSection />
-      </SectionContainer>
-
+      <HeroSection />
       <SectionContainer className="">
-        <ServiceSection />
+        <ServiceSection renderOn="home"/>
       </SectionContainer>
       <SectionContainer className="bg-white">
         <TreatmentOptionsSection />
@@ -29,7 +31,7 @@ export default function Home() {
       <SectionContainer>
         <PatientReviewSection />
       </SectionContainer>
-      <SectionContainer className="bg-dark    ">
+      <SectionContainer className="bg-dark">
         <LocationSection />
       </SectionContainer>
     </div>

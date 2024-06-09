@@ -2,37 +2,38 @@ import { PageHeader } from "@/components/PageTitle";
 import { SectionContainer } from "@/components/SectionContainer";
 import { Metadata } from "next";
 import Image from "next/image";
+import Image1 from "@/public/clinic-images/clinic.jpg";
+import Image2 from "@/public/clinic-images/02.jpg";
+import Image3 from "@/public/clinic-images/03.jpg";
+import Image4 from "@/public/clinic-images/04.jpg";
+import Image5 from "@/public/clinic-images/05.jpg";
+import Image6 from "@/public/clinic-images/06.jpg";
 
 const images = [
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipOyJCDhA17IUvegpUfiBqF1--F7dGMGESo21v9O=s1360-w1360-h1020",
-    alt: "Image 1",
+    src: Image1,
+    alt: "physiotherapeutic-clinic-inside-look.jpg",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipNDoJ8fZGZ2zD88DuBGo7AQkGQLW9Os7s6AvVYk=s1360-w1360-h1020",
+    src: Image2,
     alt: "Image 2",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipNnpG-5ICIFLtVDC8TjC3Wld7_5Y0j85CZ7cm9L=s1360-w1360-h1020",
+    src: Image3,
     alt: "Image 3",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipOMqW46MJG63jtR5nbq0RrqPuA2F1UF92-sKi3n=s1360-w1360-h1020",
+    src: Image4,
     alt: "Image 4",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipNnpG-5ICIFLtVDC8TjC3Wld7_5Y0j85CZ7cm9L=s1360-w1360-h1020",
+    src: Image5,
     alt: "Image 3",
   },
   {
-    src: "https://lh3.googleusercontent.com/p/AF1QipNnpG-5ICIFLtVDC8TjC3Wld7_5Y0j85CZ7cm9L=s1360-w1360-h1020",
+    src: Image6,
     alt: "Image 5",
   },
-  {
-    src: "https://lh3.googleusercontent.com/p/AF1QipNnpG-5ICIFLtVDC8TjC3Wld7_5Y0j85CZ7cm9L=s1360-w1360-h1020",
-    alt: "Image 6",
-  },
-
   // Add more images as needed
 ];
 export const metadata: Metadata = {
@@ -54,20 +55,20 @@ const ImageGallery = () => {
               Clinic Photo Gallary
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-4">
             {images.map((image, index) => (
               <div key={index} className="relative group flex justify-center">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   //   layout="responsive"
-                  width={400}
-                  height={500}
+                  width={600}
+                  height={400}
                   className="h-[300px] object-cover rounded-lg shadow-md transition-transform transform group-hover:scale-105 object-center"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition-opacity">
+                {/* <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center rounded-lg transition-opacity">
                   <p className="text-white text-lg font-bold">{image.alt}</p>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

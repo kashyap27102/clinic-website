@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { FaInstagramSquare } from "react-icons/fa";
+import InstaIcon from "@/public/instagram.svg"
 import { FaFacebook, FaYoutube } from "react-icons/fa6";
 
 export const SocialIcons = ({
@@ -15,7 +16,8 @@ export const SocialIcons = ({
     <div className="flex items-center gap-4">
       {instagram && (
         <Link href={instagram} target="_blank">
-          <FaInstagramSquare className="h-8 w-8" />
+          <Image src={InstaIcon} alt="physiotherapeutic-instagram-account"
+          width={30} height={30}/>
         </Link>
       )}
       {youtube && (

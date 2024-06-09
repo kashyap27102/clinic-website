@@ -12,7 +12,9 @@ export const Navbar = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const closeHandler = () => {
-    setOpenNavigation(false);
+    setTimeout(() => {
+      setOpenNavigation(false);
+    }, 1000);
   };
 
   return (
@@ -20,7 +22,7 @@ export const Navbar = () => {
       <div className="bg-light p-6 shadow-lg lg:sticky lg:top-0 w-full z-40">
         <div className="md:w-4/5 mx-auto flex items-center justify-between">
           <div>
-            <Logo placeholder='navbar'/>
+            <Logo placeholder="navbar" />
           </div>
           <nav className=" hidden lg:flex items-center gap-4">
             <ul className="flex gap-4 font-medium text-lg">
@@ -71,7 +73,9 @@ export const Navbar = () => {
               className="h-6 w-6 text-primary cursor-pointer"
               onClick={() => setOpenNavigation(true)}
             />
-            {openNavigation && <NavbarSlider onClose={closeHandler} />}
+            {openNavigation && (
+              <NavbarSlider isOpen={openNavigation} onClose={closeHandler} />
+            )}
           </nav>
         </div>
       </div>

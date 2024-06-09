@@ -13,43 +13,34 @@ export const TreatmentOptionsSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Clinic Treatment */}
-        <div className="bg-light shadow-lg rounded-lg overflow-hidden p-6">
-          <h3 className="text-xl font-semibold text-primaryDark mb-2">
+        <div className="bg-primary text-white shadow-lg rounded-lg overflow-hidden p-6">
+          <h3 className="text-2xl font-semibold mb-4">
             Clinic Treatment
           </h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600">
             Receive personalized treatment at our clinic from our experienced
             physiotherapists.
           </p>
-          <button className="bg-primaryDark text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300">
-            Book Now
-          </button>
         </div>
         {/* Home Visit */}
-        <div className="bg-light shadow-lg rounded-lg overflow-hidden p-6">
-          <h3 className="text-xl font-semibold text-primaryDark mb-2">
+        <div className="bg-primary text-white shadow-lg rounded-lg overflow-hidden p-6">
+          <h3 className="text-2xl font-semibold mb-4">
             Home Visit
           </h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600 ">
             Get treatment in the comfort of your own home. Our therapists will
             come to you.
           </p>
-          <button className="bg-primaryDark text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300">
-            Book Now
-          </button>
         </div>
         {/* Virtual Treatment */}
-        <div className="bg-light shadow-lg rounded-lg overflow-hidden p-6">
-          <h3 className="text-xl font-semibold text-primaryDark mb-2">
+        <div className="bg-primary text-white shadow-lg rounded-lg overflow-hidden p-6">
+          <h3 className="text-2xl font-semibold mb-4">
             Virtual Treatment
           </h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-600">
             Access physiotherapy services remotely from anywhere via virtual
             sessions.
           </p>
-          <button className="bg-primaryDark text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:shadow-xl transition duration-300">
-            Book Now
-          </button>
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ export const PatientReviewSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {reviews.map((r) => {
-          return <ReviewCard data={r} />;
+          return <ReviewCard data={r} key={r.id} />;
         })}
       </div>
     </section>

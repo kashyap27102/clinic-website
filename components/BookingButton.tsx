@@ -16,7 +16,7 @@ export const BookingButton = () => {
       onClick={handleClick}
     >
       <FaCalendarAlt />
-      <span>Book an Appointment</span>
+      <span>Book Appointment Today</span>
     </button>
   );
 };

@@ -1,9 +1,15 @@
 import { services } from "@/data/service";
 import Image from "next/image";
+import Link from "next/link";
 
-export const ServiceSection = () => {
+export const ServiceSection = ({
+  renderOn = "treatments",
+}: {
+  renderOn?: "home" | "treatments";
+}) => {
+  if (renderOn == "home") services.length = 6;
   return (
-    <section className="">
+    <>
       <div className="text-center mb-12">
         <p className="text-primaryDark uppercase tracking-widest">WHAT WE DO</p>
         <h2 className="text-3xl lg:text-4xl font-semibold text-dark mt-2">
@@ -34,6 +40,15 @@ export const ServiceSection = () => {
           );
         })}
       </div>
-    </section>
+      {renderOn === "home" && (
+        <div className="flex justify-center mt-6">
+          <Link href={"/treatments"}>
+            <button className="px-4 py-2 bg-primaryDark text-white rounded-sm hover:shadow-lg">
+              View More
+            </button>
+          </Link>
+        </div>
+      )}
+    </>
   );
 };

@@ -7,7 +7,6 @@ export const ServiceSection = ({
 }: {
   renderOn?: "home" | "treatments";
 }) => {
-  if (renderOn == "home") services.length = 6;
   return (
     <>
       <div className="text-center mb-12">
@@ -17,7 +16,8 @@ export const ServiceSection = ({
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((service) => {
+        {services.map((service, index) => {
+          if (renderOn === "home" && index > 5) return null;
           return (
             <div
               key={service.id}

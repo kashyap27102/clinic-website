@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Lato } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { SectionContainer } from "@/components/SectionContainer";
 import { Footer } from "@/components/Footer";
 import { CopyRightSection } from "@/components/CopyRightSection";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const inter = Inter({ subsets: ["latin"] });
 const lato = Lato({ subsets: ["latin"], weight: ["400", "300", "700", "900"] });
 
 export const metadata: Metadata = {
@@ -31,6 +32,8 @@ export default function RootLayout({
         <SectionContainer className="bg-dark md:p-4 lg:p-4">
           <CopyRightSection />
         </SectionContainer>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

@@ -3,9 +3,9 @@ import { TbTargetArrow } from "react-icons/tb";
 
 export const MissionVision = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <div className="col-span-1 text-justify space-y-3 md:p-6">
-        <TbTargetArrow className="text-8xl text-primaryDark" />
+        <TbTargetArrow className="text-8xl text-secondary" />
         <h4 className="text-dark text-2xl font-semibold">Mission</h4>
         <p>
           Our Mission is to deliver exceptional physiotherapy care through
@@ -15,8 +15,8 @@ export const MissionVision = () => {
           and regain their independence.
         </p>
       </div>
-      <div className=" col-span-1 text-justify space-y-3 md:p-6">
-        <IoMdEye className="text-8xl text-primaryDark" />
+      <div className="text-base col-span-1 text-justify space-y-3 md:p-6">
+        <IoMdEye className="text-8xl text-secondary" />
         <h4 className="text-dark text-2xl font-semibold">Vision</h4>
         <p>
           Our Vision is to be the leading physiotherapy clinic in Gandhinagar

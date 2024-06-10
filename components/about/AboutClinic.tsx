@@ -1,7 +1,7 @@
 export const AboutClinic = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-      <div className="flex flex-col justify-center lg:gap-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="flex flex-col justify-center gap-2 lg:gap-4">
         <h1 className="text-primary text-4xl lg:text-5xl font-semibold leading-tight">
           Know Our Clinic
         </h1>
@@ -9,7 +9,7 @@ export const AboutClinic = () => {
           Best Physiotherapy Clinic in Gandhinagar
         </h3>
       </div>
-      <div className="text-justify font-medium space-y-2">
+      <div className="text-base font-medium space-y-2">
         <p>
           Welcome to The Physiotherapeutic Clinic, your premier destination for
           top-notch physiotherapy services in Gandhinagar and Ahmedabad. Our
@@ -18,8 +18,8 @@ export const AboutClinic = () => {
           wellness.
         </p>
         <p>
-          Whether you&apos;re recovering from an injury, managing chronic pain, or
-          seeking to enhance your physical performance, our experienced
+          Whether you&apos;re recovering from an injury, managing chronic pain,
+          or seeking to enhance your physical performance, our experienced
           physiotherapists are here to guide you every step of the way. Trust
           The Physiotherapeutic Clinic for the best in physiotherapy services
           and start your journey to a pain-free, active lifestyle today.

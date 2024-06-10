@@ -12,9 +12,7 @@ export const Navbar = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const closeHandler = () => {
-    setTimeout(() => {
-      setOpenNavigation(false);
-    }, 1000);
+    setOpenNavigation(false);
   };
 
   return (
@@ -73,9 +71,7 @@ export const Navbar = () => {
               className="h-6 w-6 text-primary cursor-pointer"
               onClick={() => setOpenNavigation(true)}
             />
-            {openNavigation && (
-              <NavbarSlider isOpen={openNavigation} onClose={closeHandler} />
-            )}
+            <NavbarSlider isOpen={openNavigation} onClose={closeHandler} />
           </nav>
         </div>
       </div>
